@@ -1,0 +1,85 @@
+#containerText{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+#containerButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 18px;
+    margin-bottom: 40px;
+}
+#containerText h1{
+    text-align: left;   
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#containerText p{
+    margin-top: 18px;
+    margin-bottom: 0px;
+}
+#containerButton button{    
+    flex-grow: 1;
+    height: 50px;
+    background-color: #cecece;
+}
+#containerButton button:hover {
+    background-color:#e0e0e0 ;
+}
+
+.choice-grid {
+    align-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.choice-grid div{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 20px;
+}
+@media(max-width:700px){
+    article{
+        width: 95%;
+    }
+    header div span{
+        display: none;
+    }
+    .containerButton{
+        width: 95%;
+    }
+    .containerText{
+        width: 95%;
+    }
+}
+
+@media(max-width:500px){
+    .choice-grid div{
+        width: 49%;
+    }
+}
+
+.selezionato{
+    background-color: #cfe3ff;
+}
+
+.nonSelezionato{
+    opacity: 0.6;
+}
+
+.inizio{
+    background-color: #f4f4f4;
+}
